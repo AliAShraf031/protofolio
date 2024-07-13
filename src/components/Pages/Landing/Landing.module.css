@@ -1,0 +1,79 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 50px 0 0;
+}
+
+.landing::after {
+  background-image: url('../../assets/images/home-bg.62a287a4c574f4cefae5.png');
+  background-attachment: fixed;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.landing .text {
+  font-size: 20px;
+  color: white;
+}
+
+.landing h1 {
+  color: var(--primaryColor);
+  font-size: 60px;
+  text-align: center;
+}
+
+.landing p {
+  max-width: 50%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.landing button {
+  border: 2px solid var(--primaryColor);
+  outline: none;
+  padding: 15px 50px;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.landing button:hover {
+  background-color: var(--primaryColor);
+}
+
+@media screen and (max-width :768px) {
+  .landing {
+    margin-top: 70px;
+  }
+
+  .landing h1 {
+    font-size: 40px;
+  }
+
+  .landing p {
+    max-width: 70%;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,17 @@
+footer {
+  margin-top: 30px;
+  height: 20vh;
+  background-color: var(--primaryBackground);
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.links i {
+  font-size: 18px;
+}
